@@ -1,0 +1,22 @@
+// * {border: 1px solid red;}
+
+/* Variables */
+
+$font-main: 'Montserrat', sans-serif;
+$font-text: 'Roboto Slab', sans-serif;
+$font-italic: 'Source Serif Pro', sans-serif;
+
+$font-color-light: #ffffff;
+$font-color-grey: #a2a2a2;
+$font-color-button: #fed136;
+$font-color-footer: #222222;
+
+
+/* Header */
+
+.splash {
+    background: $color-one;
+    font: $font-color-main;
+    min-height: 500px;
+    display: flex;
+}
