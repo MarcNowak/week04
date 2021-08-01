@@ -216,20 +216,24 @@ header {
     font-size: 14px;
     color: $font-color-grey;
     text-transform: capitalize;
-    margin: -20px;
+    margin: 0px;
     line-height: 1em;
 }
 
-.card-image {
-    img {
-        width: 300px;
-        height: 100%;
-    }
-}
+/* Portfolio */
 
 .portfolio {
     background: #f7f7f7;
     padding: 80px 0;
+}
+
+.card-description-portfolio {
+    font-family: $font-italic;
+    font-size: 14px;
+    color: $font-color-grey;
+    text-transform: capitalize;
+    margin: -20px;
+    line-height: 1em;
 }
 
 /* Footer */
@@ -251,4 +255,23 @@ header {
     background: $font-color-dark-grey;
     text-align: center;
     margin: 0 7px;
+}
+
+/* Media */
+
+@media (max-width: 767px) {
+
+    .site-title {
+        line-height: 1em;
+        
+    }
+    
+    .site-subtitle {
+        line-height: 1em;
+        
+    }    
+
+    .navigation {
+        padding-top: 15px;
+    }
 }
