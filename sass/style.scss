@@ -1,4 +1,4 @@
-* {border: 1px solid red;}
+// * {border: 1px solid red;}
 
 /* Variables */
 
@@ -168,4 +168,8 @@ header {
     font-family: $font-text;
     font-size: 12px;
     color: $font-color-grey;
+}
+
+.portfolio {
+    background: #f7f7f7;
 }
