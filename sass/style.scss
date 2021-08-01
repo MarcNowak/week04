@@ -18,6 +18,10 @@ $font-color-hover: #fed136;
     box-sizing: border-box;
 }
 
+body {
+	margin: 0 ;
+}
+
 .container {
     max-width: 1140px;
     padding: 0 20px;
@@ -39,6 +43,14 @@ h3 {
     color: $font-color-dark-grey;
     font-weight: bold;
     text-transform: capitalize;
+    margin-bottom: 0;
+    margin-top: 0;  
+}
+
+h4 {
+    font-family: $font-main;
+    font-size: 14px;
+    color: $font-color-dark-grey;
 }
 
 .subtitle-section {
@@ -107,7 +119,7 @@ h3 {
 header {
     background: url(https://i.postimg.cc/NMWnkYGv/header.png);
     background-size: cover;
-    height: 700px;
+    height: 100vh;
 }
 
 
@@ -207,6 +219,7 @@ header {
     background: $font-color-light;
 }
 
+
 .card, .card-body {
     text-align: center;
 }
@@ -236,6 +249,18 @@ header {
     line-height: 1em;
 }
 
+.portfolio {
+    img {
+        width: 100%;
+    }
+}
+
+.portfolio {
+    p {
+        margin-bottom: 0;
+        margin-top: 0;   
+    }
+}
 /* Footer */
 
 .page-footer {
@@ -257,6 +282,18 @@ header {
     margin: 0 7px;
 }
 
+.page-footer {
+    i:hover {
+        color: $font-color-hover;
+        transform: scale(1.5, 1.5);
+        transition: all 1s;
+        }
+}
+
+.col-md-4 {
+    color: $font-color-dark-grey;
+}
+
 /* Media */
 
 @media (max-width: 767px) {
@@ -274,4 +311,8 @@ header {
     .navigation {
         padding-top: 15px;
     }
+
+    .navigation li {
+        display: block;
+       }
 }
