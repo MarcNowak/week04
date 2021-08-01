@@ -1,4 +1,4 @@
-// * {border: 1px solid red;}
+* {border: 1px solid red;}
 
 /* Variables */
 
@@ -45,14 +45,14 @@ h3 {
 .container {
     max-width: 1140px;
     padding: 0 20px;
-    margin: 0 auto;
+    margin: 35px auto;
 }
 
 /* Navigation */
 
 .navigation {
     display: flex;
-    flex: 100%;
+    flex: 50%;
     justify-content: flex-end;
     font-weight: bold;
 }
@@ -61,7 +61,7 @@ h3 {
     a {
         text-decoration: none;
         color: $font-color-light;
-        min-width: 130px;
+        min-width: 100px;
     }
 }
 
@@ -76,7 +76,7 @@ h3 {
 .navigation {
     li {
         display: inline-block;
-        margin-right: 36px;
+        margin-right: 6px;
         position: relative;
         font-family: $font-main;
         text-transform: uppercase;
@@ -87,6 +87,17 @@ h3 {
     a:hover {
         color: $font-color-hover;
         }
+}
+
+.logo-navi {
+    display: flex;
+    flex: 50%;
+    margin: 0;
+    color: $font-color-button;
+    font-family: $font-main;
+    text-transform: uppercase;
+    font-weight: 900;
+    
 }
 
 /* Header */
