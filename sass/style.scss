@@ -6,17 +6,122 @@ $font-main: 'Montserrat', sans-serif;
 $font-text: 'Roboto Slab', sans-serif;
 $font-italic: 'Source Serif Pro', sans-serif;
 
-$font-color-light: #ffffff;
+$font-color-light: #fff;
 $font-color-grey: #a2a2a2;
 $font-color-button: #fed136;
 $font-color-footer: #222222;
+$font-color-hover: #fed136;
 
+/* Global */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1400px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* Navigation */
+
+.navigation {
+    display: flex;
+    flex: 100%;
+    justify-content: flex-end;
+}
+
+.navigation {
+    a {
+        text-decoration: none;
+        color: $font-color-light;
+        min-width: 130px;
+    }
+}
+
+.navigation {
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+}
+
+.navigation {
+    li {
+        display: inline-block;
+        margin-right: 36px;
+        position: relative;
+        font-family: $font-main;
+        text-transform: uppercase;
+    }
+}
+
+.navigation {
+    a:hover {
+        color: $font-color-hover;
+        }
+}
 
 /* Header */
 
+header {
+    background: url(https://i.postimg.cc/NMWnkYGv/header.png);
+    background-size: cover;
+    height: 700px;
+}
+
+
+/* Splash */
+
 .splash {
-    background: $color-one;
-    font: $font-color-main;
-    min-height: 500px;
-    display: flex;
+    flex: 1;
+    text-align: center;
+}
+
+.splash-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.site-title {
+    font-family: $font-italic;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: $font-color-light;
+    
+}
+
+.site-subtitle {
+    font-family: $font-main;
+    color: $font-color-light;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+.btn {
+    width: 160px;
+    height: 60px;
+    margin: auto auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-family: $font-main;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: $font-color-light;
+    background: $font-color-button;
+}
+
+.btn-one {
+    background-position: 100% 0;
+    background-size: 300%;
 }
